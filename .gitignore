@@ -1,0 +1,19 @@
+# Ignore notes.txt
+notes.txt
+
+# Ignore TTS generated bundles
+bundled/
+
+# Ignore all object scripts by default
+*.*.lua
+*.*.xml
+*.json
+
+# Allow Global scripts
+!Global.-1.lua
+!Global.-1.xml
+
+# Allow VSCode settings
+!.vscode/*.json
+
+# Explicitly track only objects actively scripted (by GUID or name)
