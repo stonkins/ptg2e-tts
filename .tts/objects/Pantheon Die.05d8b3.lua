@@ -5,19 +5,19 @@ local DEFAULT_AMBER = Color(245/255, 158/255, 11/255)
 
 -- Set to true if you want the outer silhouette aura to also stay lit on the table
 -- Set to false if you want only the glass core to hold the color while at rest
-local KEEP_AURA_ON_REST = false
+local KEEP_AURA_ON_REST = true
 
 local settle_wait_id = nil
 
 -- Seat palette mapping
 local SEAT_COLORS = {
-    ["Black"]  = Color(38/255, 38/255, 38/255),    -- GM: Uncharged Black (Obsidian)
-    ["Pink"]   = Color(255/255, 46/255, 147/255),  -- Hot Neon Pink
-    ["Orange"] = Color(249/255, 115/255, 22/255),   -- Combustion Orange
-    ["White"]  = Color(148/255, 163/255, 184/255),  -- Punk Steel Grey
-    ["Blue"]   = Color(168/255, 85/255, 247/255),  -- Spirit World Purple
-    ["Red"]    = Color(234/255, 179/255, 8/255),    -- Regal Gold
-    ["Green"]  = Color(16/255, 185/255, 129/255),   -- Emerald Green (#10B981)
+    ["Black"]  = Color(38/255, 38/255, 38/255, 225/255),    -- GM: Uncharged Black (Obsidian)
+    ["Pink"]   = Color(255/255, 46/255, 147/255, 225/255),  -- Hot Neon Pink
+    ["Orange"] = Color(249/255, 115/255, 22/255, 225/255),   -- Combustion Orange
+    ["White"]  = Color(148/255, 163/255, 184/255, 225/255),  -- Punk Steel Grey
+    ["Blue"]   = Color(168/255, 85/255, 247/255, 225/255),  -- Spirit World Purple
+    ["Red"]    = Color(234/255, 179/255, 8/255, 225/255),    -- Regal Gold
+    ["Green"]  = Color(16/255, 185/255, 129/255, 225/255),   -- Emerald Green (#10B981)
 }
 
 local function clearPendingSettle()
